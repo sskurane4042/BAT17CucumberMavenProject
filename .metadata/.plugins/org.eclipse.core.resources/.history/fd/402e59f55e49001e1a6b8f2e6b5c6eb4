@@ -1,0 +1,68 @@
+package pakage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class DailyPractic {
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Softwar Testing\\Chrome_116\\chromedriver-win64\\chromedriver-win64chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.navigate().to("https://jqueryui.com/"); Thread.sleep(2000);
+		driver.manage().window().maximize();           Thread.sleep(2000);
+		 
+		WebElement JSF=driver.findElement(By.xpath("//a[text()='JS Foundation']")); 
+		WebElement PLFrop=driver.findElement(By.xpath("//a[text()='Plugins']")); 
+		WebElement Demo=driver.findElement(By.xpath("//a[text()='Demos']"));
+			
+		
+		
+		Actions act=new Actions(driver);
+		
+		act.moveToElement(JSF).build().perform();                      Thread.sleep(2000);
+		act.contextClick(PLFrop).build().perform();                    Thread.sleep(2000);
+		act.doubleClick(Demo).build().perform();                         Thread.sleep(2000);
+		
+		
+		
+		//driver.switchTo().frame(0);
+		
+		//WebElement DragMe=driver.findElement(By.xpath("//*[@id='draggable']"));
+		//WebElement DropMe=driver.findElement(By.xpath("//*[@id='droppable']"));
+		
+		//act.dragAndDrop(DragMe, DropMe).build().perform(); 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//driver.close();
+		
+		
+		
+		
+		 
+		
+		
+		
+		
+	
+		
+		//driver.close();
+		
+		
+		
+	}
+
+}

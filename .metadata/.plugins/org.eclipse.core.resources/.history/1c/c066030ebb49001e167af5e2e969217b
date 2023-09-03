@@ -1,0 +1,10 @@
+package javapackage;
+
+public class TestNG1 {
+	
+	public void a()
+	{
+		
+	}
+
+}

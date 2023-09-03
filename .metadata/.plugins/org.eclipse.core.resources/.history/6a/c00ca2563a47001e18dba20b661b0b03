@@ -1,0 +1,30 @@
+package javapackage;
+
+public class Whatever {
+	
+	String pooja="sanjay";
+	
+	public static void main(String[] args) {
+		
+		
+		
+		Whatever m=new Whatever();
+		m.me();
+		System.out.println(m.pooja);
+	
+		
+		int a=10;
+		int b=10;
+		
+		System.out.println("Addition =" +(a+b));
+		
+
+}
+	
+	public void me ()
+	{
+		int name=15;
+		System.out.println(name);
+	}
+}
+

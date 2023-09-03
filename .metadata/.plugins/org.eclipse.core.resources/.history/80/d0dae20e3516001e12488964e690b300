@@ -1,0 +1,15 @@
+package javapackage;
+
+public class Practice {
+	
+	public static void main(String[] args) {
+		
+		int a=10; int b=5;
+		
+		if (a>5)
+		{
+			System.out.println("print" +a);
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package one;
+
+public class Constructor {
+	
+	public Constructor(int x)
+	{
+		System.out.println("I m constructor");
+	}
+
+	public Constructor()
+	{
+		System.out.println("I m not constructor");
+	}
+	public static void main(String[] args) {
+		
+		Constructor const=new Constructor(10);
+	}
+}
